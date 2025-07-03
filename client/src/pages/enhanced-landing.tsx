@@ -7,6 +7,15 @@ import AuthModal from "./auth-modal";
 import LearnMore from "./learn-more";
 import ContactForm from "@/components/contact-form";
 import HeroSlideshow from "@/components/hero-slideshow";
+import img1 from "@assets/1_1751298558711.jpeg";
+import img2 from "@assets/2_1751298558713.jpeg";
+import img3 from "@assets/3_1751298558708.jpeg";
+import img4 from "@assets/4_1751298558706.jpeg";
+import img5 from "@assets/5_1751298558698.jpeg";
+import img6 from "@assets/6_1751298558703.jpeg";
+import img7 from "@assets/7_1751298558701.jpeg";
+import img8 from "@assets/8_1751298558704.JPG";
+import img9 from "@assets/9_1751298558714.jpeg";
 
 export default function EnhancedLanding() {
   const [showAuthModal, setShowAuthModal] = useState(false);
@@ -40,7 +49,7 @@ export default function EnhancedLanding() {
   return (
     <div className="bg-gray-50">
       {/* Hero Section with Slideshow Background */}
-      <HeroSlideshow>
+      <HeroSlideshow images={[img1, img2, img3, img4, img5, img6, img7, img8, img9]}>
         {/* Enhanced Header */}
         <header className="px-4 lg:px-6 h-20 flex items-center justify-between bg-black/30 backdrop-blur-md relative z-10 border-b border-white/10">
           <div className="flex items-center space-x-4">
@@ -63,7 +72,7 @@ export default function EnhancedLanding() {
               <p className="text-white font-bold">Local Instructors</p>
             </div>
             <div className="text-right">
-              <a href="http://www.thedreamers.rg" target="_blank" rel="noopener noreferrer" className="text-white/80 text-sm hover:text-white transition-colors">
+              <a href="https://www.thedreamres.org/" target="_blank" rel="noopener noreferrer" className="text-white/80 text-sm hover:text-white transition-colors">
                 developed by THE DREAMERS
               </a>
             </div>
@@ -404,7 +413,7 @@ export default function EnhancedLanding() {
           <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div className="flex flex-col items-center md:items-start">
               <p>&copy; 2024 Rwamwanja Rural Foundation. All rights reserved.</p>
-              <a href="http://www.thedreamers.rg" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-rrf-green transition-colors mt-1">
+              <a href="https://www.thedreamres.org/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-rrf-green transition-colors mt-1">
                 developed by THE DREAMERS
               </a>
             </div>
