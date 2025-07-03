@@ -16,7 +16,7 @@ import img6 from "@assets/6_1751298558703.jpeg";
 import img7 from "@assets/7_1751298558701.jpeg";
 import img8 from "@assets/8_1751298558704.JPG";
 import img9 from "@assets/9_1751298558714.jpeg";
-import orgBg from "@assets/8_1751298558704.JPG";
+import orgBg from "@assets/1_1751298558711.jpeg";
 import impactImg from "@assets/4_1751298558706.jpeg";
 
 export default function EnhancedLanding() {
