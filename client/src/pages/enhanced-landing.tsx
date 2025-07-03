@@ -46,9 +46,6 @@ export default function EnhancedLanding() {
           <div className="flex items-center space-x-4">
             <div className="relative">
               <img src={rrfLogo} alt="RRF Logo" className="w-16 h-16 object-contain rounded-full border-2 border-white/20 bg-white/10 p-1" />
-              <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-rrf-green rounded-full border-2 border-white flex items-center justify-center">
-                <span className="text-white text-xs">✓</span>
-              </div>
             </div>
             <div>
               <h1 className="text-2xl font-bold text-white">RRF Learning Platform</h1>
@@ -64,6 +61,11 @@ export default function EnhancedLanding() {
             <div className="text-right">
               <p className="text-white/80 text-sm">Expert Led</p>
               <p className="text-white font-bold">Local Instructors</p>
+            </div>
+            <div className="text-right">
+              <a href="http://www.thedreamers.rg" target="_blank" rel="noopener noreferrer" className="text-white/80 text-sm hover:text-white transition-colors">
+                developed by THE DREAMERS
+              </a>
             </div>
           </div>
         </header>
@@ -145,7 +147,7 @@ export default function EnhancedLanding() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-rrf-green">✓</span>
-                  <span>5+ years of impact in East Africa</span>
+                  <span>9+ years of impact in Uganda</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-rrf-green">✓</span>
@@ -176,7 +178,16 @@ export default function EnhancedLanding() {
               Meet <span className="text-rrf-green">Rwamwanja Rural Foundation</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              A refugee-led community-based organization transforming lives through sustainable education and practical permaculture solutions across East Africa
+              Rwamwanja Rural Foundation (RRF), a refugee‑led grassroots NGO in Uganda, has been honoured with the Lush Spring Prize 2023 and the Webby International Award 2024 in recognition of its groundbreaking work in ecological regeneration and community empowerment. Rooted in permaculture, indigenous practices, and practical entrepreneurship, RRF equips refugees and host‑community members—especially women and youth—with the skills to rebuild degraded ecosystems and restore food sovereignty.
+            </p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mt-4">
+              The Lush Spring Prize awarded £20,000 to RRF in 2023, enabling the establishment of regenerative agriculture learning centres across twelve East‑African refugee settlements. This investment fortified their capacity to train 500+ young refugees in permaculture techniques like kitchen gardening, agroforestry, composting, and mushroom cultivation, yielding immediate benefits in nutrition, income, and soil health.
+            </p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mt-4">
+              Building on this, the Webby International Award in 2024 celebrated RRF's innovative use of digital platforms to share regenerative‑agriculture resources in local languages. By creating accessible online materials, they've extended their reach far beyond Uganda, scaling up climate resilience education within displaced communities.
+            </p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mt-4">
+              RRF's work is vital for ecological regeneration: it restores biodiversity through tree planting and composting, rebuilds soils, and combats climate‑driven degradation. Simultaneously, it fosters social regeneration—transforming aid dependency into community‑led entrepreneurship, dignity, and long‑term self‑reliance. RRF exemplifies how grassroots action, award‑backed support, and digital innovation can regenerate ecosystems and lives.
             </p>
           </div>
 
@@ -196,12 +207,12 @@ export default function EnhancedLanding() {
               </div>
               <div className="grid grid-cols-2 gap-4 pt-6 border-t border-gray-100">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-rrf-green">5+</p>
+                  <p className="text-3xl font-bold text-rrf-green">9</p>
                   <p className="text-sm text-gray-600">Years of Impact</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-rrf-green">3</p>
-                  <p className="text-sm text-gray-600">Countries Served</p>
+                  <p className="text-3xl font-bold text-rrf-green">25,000+</p>
+                  <p className="text-sm text-gray-600">Individuals Impacted</p>
                 </div>
               </div>
             </div>
@@ -218,14 +229,18 @@ export default function EnhancedLanding() {
                   </p>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4 pt-6 border-t border-gray-100">
+              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-100">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-blue-600">1,200+</p>
                   <p className="text-sm text-gray-600">Students Trained</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-blue-600">50+</p>
-                  <p className="text-sm text-gray-600">Communities Reached</p>
+                  <p className="text-3xl font-bold text-blue-600">250+</p>
+                  <p className="text-sm text-gray-600">Villages Impacted</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-blue-600">25,000+</p>
+                  <p className="text-sm text-gray-600">Individuals Impacted</p>
                 </div>
               </div>
             </div>
@@ -387,7 +402,12 @@ export default function EnhancedLanding() {
 
           {/* Bottom Bar */}
           <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2024 Rwamwanja Rural Foundation. All rights reserved.</p>
+            <div className="flex flex-col items-center md:items-start">
+              <p>&copy; 2024 Rwamwanja Rural Foundation. All rights reserved.</p>
+              <a href="http://www.thedreamers.rg" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-rrf-green transition-colors mt-1">
+                developed by THE DREAMERS
+              </a>
+            </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#privacy" className="hover:text-rrf-green transition-colors">Privacy Policy</a>
               <a href="#terms" className="hover:text-rrf-green transition-colors">Terms of Service</a>
