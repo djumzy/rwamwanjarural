@@ -16,6 +16,8 @@ import img6 from "@assets/6_1751298558703.jpeg";
 import img7 from "@assets/7_1751298558701.jpeg";
 import img8 from "@assets/8_1751298558704.JPG";
 import img9 from "@assets/9_1751298558714.jpeg";
+import orgBg from "@assets/8_1751298558704.JPG";
+import impactImg from "@assets/4_1751298558706.jpeg";
 
 export default function EnhancedLanding() {
   const [showAuthModal, setShowAuthModal] = useState(false);
@@ -169,16 +171,16 @@ export default function EnhancedLanding() {
       </HeroSlideshow>
 
       {/* Enhanced Who We Are Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-white via-green-50/30 to-white relative overflow-hidden">
+      <section className="py-24 px-4 bg-gradient-to-br from-white via-green-50/30 to-white relative overflow-hidden" style={{ backgroundImage: `url(${orgBg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
         {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-60 bg-black/30"></div>
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-10 left-10 text-6xl">🌱</div>
           <div className="absolute top-32 right-20 text-4xl">🌍</div>
           <div className="absolute bottom-20 left-20 text-5xl">🤝</div>
           <div className="absolute bottom-32 right-10 text-3xl">🎓</div>
         </div>
-        
-        <div className="max-w-7xl mx-auto relative">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-rrf-green/10 rounded-full px-6 py-2 mb-6">
               <span className="text-rrf-green font-semibold">🏆 Award-Winning Organization</span>
@@ -227,6 +229,7 @@ export default function EnhancedLanding() {
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+              <img src={impactImg} alt="Our Impact" className="w-full h-40 object-cover rounded-2xl mb-6" />
               <div className="flex items-start space-x-4 mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
                   <Users className="text-white w-8 h-8" />
