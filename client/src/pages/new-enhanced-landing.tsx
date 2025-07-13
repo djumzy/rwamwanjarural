@@ -84,7 +84,7 @@ export default function NewEnhancedLanding() {
               <p className="text-white font-bold">Local Instructors</p>
             </div>
             <div className="text-right">
-              <a href="https://rrfuganda.org/" target="_blank" rel="noopener noreferrer" className="text-white/80 text-sm hover:text-green-400 transition-colors">
+              <a href="https://thedreamres.org/" target="_blank" rel="noopener noreferrer" className="text-white/80 text-sm hover:text-green-400 transition-colors">
                 developed by THE DREAMERS
               </a>
             </div>
