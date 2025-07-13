@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Database
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+cookies.txt
+login_cookies.txt
+student_cookies.txt
+instructor_cookies.txt
+auth_session.txt
+frontend_session.txt
+final_test.txt
+test_session.txt
+create-test-users.js
+update-passwords.js
+
+# Logs
+*.log
+logs/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Replit
+.replit
+replit.nix
