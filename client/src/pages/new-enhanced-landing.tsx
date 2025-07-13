@@ -135,9 +135,6 @@ export default function NewEnhancedLanding() {
                 Rwamwanja Rural Foundation (RRF), a refugee‑led grassroots NGO in Uganda, has been honoured with the <strong className="text-rrf-green">Lush Spring Prize 2023</strong> and the <strong className="text-rrf-green">Webby International Award 2024</strong> in recognition of its groundbreaking work in ecological regeneration and community empowerment. Rooted in permaculture, indigenous practices, and practical entrepreneurship, RRF equips refugees and host‑community members—especially women and youth—with the skills to rebuild degraded ecosystems and restore food sovereignty.
               </p>
               <p>
-                The Lush Spring Prize awarded <strong className="text-rrf-green">£20,000</strong> to RRF in 2023, enabling the establishment of regenerative agriculture learning centres across twelve East‑African refugee settlements. This investment fortified their capacity to train <strong className="text-rrf-green">500+ young refugees</strong> in permaculture techniques like kitchen gardening, agroforestry, composting, and mushroom cultivation, yielding immediate benefits in nutrition, income, and soil health.
-              </p>
-              <p>
                 Building on this, the Webby International Award in 2024 celebrated RRF's innovative use of digital platforms to share regenerative‑agriculture resources in local languages. By creating accessible online materials, they've extended their reach far beyond Uganda, scaling up climate resilience education within displaced communities.
               </p>
               <p>
