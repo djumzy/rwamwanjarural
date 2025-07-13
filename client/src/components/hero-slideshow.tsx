@@ -11,7 +11,7 @@ import slide5 from "@assets/5_1751298558698.jpeg";
 import slide6 from "@assets/6_1751298558703.jpeg";
 import slide9 from "@assets/9_1751298558714.jpeg";
 
-const slides = [
+const defaultSlides = [
   {
     image: slide1,
     title: "Community Permaculture Gardens",
@@ -56,11 +56,19 @@ const slides = [
 
 interface HeroSlideshowProps {
   children: React.ReactNode;
+  images?: any[];
 }
 
-export default function HeroSlideshow({ children }: HeroSlideshowProps) {
+export default function HeroSlideshow({ children, images }: HeroSlideshowProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  // Use passed images if provided, otherwise use default slides
+  const slides = images ? images.map((img, index) => ({
+    image: img,
+    title: defaultSlides[index % defaultSlides.length]?.title || `Slide ${index + 1}`,
+    description: defaultSlides[index % defaultSlides.length]?.description || "Permaculture education"
+  })) : defaultSlides;
 
   useEffect(() => {
     if (!isAutoPlaying) return;
