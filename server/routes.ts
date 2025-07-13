@@ -404,11 +404,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  const httpServer = createServer(app);
-  return httpServer;
-}
-
-
   // Admin newsletter subscriptions endpoint
   app.get("/api/admin/newsletter-subscriptions", requireAuth, async (req: any, res) => {
     try {
@@ -435,6 +430,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({ message: "Internal server error" });
     }
   });
+
+  const httpServer = createServer(app);
+  return httpServer;
+}
 
   // Admin volunteer applications endpoint  
   app.get("/api/admin/volunteer-applications", requireAuth, async (req: any, res) => {
