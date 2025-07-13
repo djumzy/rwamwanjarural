@@ -373,7 +373,7 @@ export default function NewEnhancedLanding() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Globe className="w-4 h-4 flex-shrink-0" />
-                  <a href="https://rrfuganda.org/" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-sm hover:text-white">
+                  <a href="https://thedreamres.org/" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-sm hover:text-white">
                     rrfuganda.org
                   </a>
                 </div>
